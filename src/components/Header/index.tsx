@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             <img src={dashboardIcon} alt="dashboard icon" /> Dashboard
           </Link>
 
-          <Link to="/">
+          <Link to="/providers">
             <img src={servicesIcon} alt="services icon" /> Serviços
           </Link>
 

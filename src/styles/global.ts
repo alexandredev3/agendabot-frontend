@@ -14,7 +14,7 @@ export default createGlobalStyle`
   --color-text-title: #32264D;
   --color-text-complement: #9C98A6;
   --color-text-base: #6A6180;
-  --color-line-in-white: #AFBDD1;
+  --color-line-in-white: #E6E6F0;
   --color-input-background: #FAFAFC;
   --color-black: #9E9E9E;
   --color-gray: #E5E5E5;
@@ -30,7 +30,7 @@ export default createGlobalStyle`
 
 body{
     background: var(--color-background);
-    color: var(--color-text-base);
+    color: var(--color-secundary-dark);
     -webkit-font-smoothing: antialiased;
 }
 

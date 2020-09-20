@@ -29,6 +29,10 @@ export const CardContainer = styled.div`
   flex-direction: row;
 `;
 
+export const Main = styled.div`
+  display: flex;
+`;
+
 export const Card = styled.div<Props>`
   display: flex;
   flex-direction: column;
@@ -56,5 +60,24 @@ export const Card = styled.div<Props>`
 `;
 
 export const CalendarContainer = styled.div`
+  margin-top: 46px;
 
+  > .calendar {
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    background: var(--color-title-in-primary);
+  }
+
+  > .calendar span {
+    color: #000000;
+  }
+
+  > .calendar abbr {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  > .calendar button {
+    color: var(--color-text-complement);
+  }
 `;

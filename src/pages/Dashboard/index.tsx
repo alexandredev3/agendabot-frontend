@@ -3,7 +3,9 @@ import Calendar from 'react-calendar';
 
 import Header from '../../components/Header';
 
-import { Container, Content, CardContainer, Card, CalendarContainer } from './styles';
+import 'react-calendar/dist/Calendar.css';
+
+import { Container, Content, CardContainer, Main, Card, CalendarContainer } from './styles';
 
 import clientsIcon from '../../assets/icons/clients.svg'
 import boardIcon from '../../assets/icons/board.svg'
@@ -17,37 +19,42 @@ export default function Dashboard() {
 
       <Content>
         <h1>Dashboard</h1>
-        <CardContainer>
-          <Card isActive={false}>
-            <img src={clientsIcon} alt=""/>
-            <p>128</p>
-            <small>Clientes</small>
-          </Card>
+        <Main>
+          <CardContainer>
+            <Card isActive={false}>
+              <img src={clientsIcon} alt=""/>
+              <p>128</p>
+              <small>Clientes</small>
+            </Card>
 
-          <Card isActive>
-            <img src={boardIcon} alt=""/>
-            <p>32</p>
-            <small>Missões cumpridas</small>
-          </Card>
+            <Card isActive>
+              <img src={boardIcon} alt=""/>
+              <p>32</p>
+              <small>Missões cumpridas</small>
+            </Card>
 
-          <Card isActive={false}>
-            <img src={bellIcon} alt=""/>
-            <p>2</p>
-            <small>Notificações</small>
-          </Card>
+            <Card isActive={false}>
+              <img src={bellIcon} alt=""/>
+              <p>2</p>
+              <small>Notificações</small>
+            </Card>
 
-          <Card isActive={false}>
-            <img src={headupIcon} alt=""/>
-            <p>2</p>
-            <small>Relatório</small>
-          </Card>
-        </CardContainer>
+            <Card isActive={false}>
+              <img src={headupIcon} alt=""/>
+              <p>2</p>
+              <small>Relatório</small>
+            </Card>
+          </CardContainer>
 
-        <CalendarContainer>
-          <Calendar
+          <CalendarContainer>
+            <Calendar
+              className="calendar"
+              next2Label=""
+              prev2Label=""
 
-          />
-        </CalendarContainer>
+            />
+          </CalendarContainer>
+        </Main>
       </Content>
     </Container>
   );
