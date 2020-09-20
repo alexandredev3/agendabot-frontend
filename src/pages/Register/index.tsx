@@ -4,6 +4,8 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Link, useHistory } from 'react-router-dom';
 
+import backIcon from '../../assets/icons/back.svg';
+
 import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -76,6 +78,10 @@ export default function Register() {
       <Content>
         <AnimationContainer>
           <Form ref={formRef} onSubmit={handleSubmit}>
+            <Link to="/">
+              <img src={backIcon} alt="Back" />
+            </Link>
+
             <h1>Cadastro</h1>
             <p>Preencha os dados abaixo <br /> para começar.</p>
 

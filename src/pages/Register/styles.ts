@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled, { keyframes } from 'styled-components';
 
 const appearFromLeft = keyframes`
@@ -40,9 +41,14 @@ export const AnimationContainer = styled.div`
     width: 340px;
     text-align: left;
 
+    > img {
+      cursor: pointer;
+    }
+
     > h1 {
       color: var(--color-secundary);
       font-size: 36px;
+      margin-top: 48px;
     }
 
     > p {

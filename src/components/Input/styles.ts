@@ -57,7 +57,7 @@ ${(props) =>
     color: var(--color-text-base);
 
     &::placeholder {
-      color: #666360;
+      color: var(--color-text-complement);
     }
   }
 

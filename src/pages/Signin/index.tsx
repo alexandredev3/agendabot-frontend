@@ -5,6 +5,8 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Link, useHistory } from 'react-router-dom';
 
+import heartIcon from '../../assets/icons/heart.svg';
+
 import { useAuth } from '../../hooks/AuthContext';
 import { useToast } from '../../hooks/ToastContext';
 
@@ -119,7 +121,7 @@ const Signin: React.FC = () => {
             </WrapperLink>
 
             <WrapperText>
-              <p>É de graça ❤</p>
+              <p>É de graça <img src={heartIcon} alt="heart icon" /></p>
             </WrapperText>
           </Footer>
 

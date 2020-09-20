@@ -105,6 +105,9 @@ export const Footer = styled.footer`
 export const WrapperText = styled.div`
   > p {
     color: var(--color-text-complement);
+    > img {
+      margin-left: 6px;
+    }
   }
 `;
 
