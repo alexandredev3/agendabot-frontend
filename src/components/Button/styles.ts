@@ -10,7 +10,7 @@ export const Container = styled.button`
   color: var(--color-title-in-primary);
   width: 100%;
   font-weight: 500;
-  margin-top: 16px;
+  margin-top: 40px;
   transition: background-color 0.2s;
 
   &:hover {

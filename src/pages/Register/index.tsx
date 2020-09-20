@@ -12,6 +12,7 @@ import {
   Container,
   Content,
   AnimationContainer,
+  Background
 } from './styles';
 
 import { useAuth } from '../../hooks/AuthContext';
@@ -72,14 +73,15 @@ export default function Register() {
 
   return (
     <Container>
-      <h1>Cadastro</h1>
-      <p>Preencha os dados abaixo para começar.</p>
-
       <Content>
         <AnimationContainer>
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <Input name="email" placeholder="Email"></Input>
+            <h1>Cadastro</h1>
+            <p>Preencha os dados abaixo <br /> para começar.</p>
 
+            <Input name="name" placeholder="Nome"></Input>
+            <Input name="lastname" placeholder="Sobrenome"></Input>
+            <Input name="email" placeholder="Email"></Input>
             <Input
               name="password"
               type="password"
@@ -90,6 +92,8 @@ export default function Register() {
           </Form>
           </AnimationContainer>
       </Content>
+
+      <Background />
     </Container>
   );
 };
