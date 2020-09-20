@@ -1,7 +1,20 @@
 import React from 'react';
 
-const Dashboard: React.FC = () => {
-  return <h1>Dashboard</h1>;
-};
+import Header from '../../components/Header';
+import NavBar from '../../components/NavBar';
+import DashboardPage from '../../components/DashboardPage';
 
-export default Dashboard;
+import { Container, Content } from './styles';
+
+export default function Dashboard() {
+  return (
+    <Container>
+      <Header />
+      <NavBar />
+
+      <Content>
+        <DashboardPage />
+      </Content>
+    </Container>
+  );
+}

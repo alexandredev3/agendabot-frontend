@@ -10,9 +10,11 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   background: var(--color-input-background);
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 16px;
   width: 100%;
+
+  border-left: 2px solid #E6E6F0;
 
   color: #666360;
 
@@ -28,7 +30,7 @@ export const Container = styled.div<ContainerProps>`
 ${(props) =>
   props.isErrored &&
   css`
-    border-color: #c53030;
+    border-color: var(--color-primary);
   `}
 
   /* Quando a propriedade isFocused for true, adicionar o css */
@@ -37,7 +39,7 @@ ${(props) =>
     props.isFocused &&
     css`
       color: #ff9000;
-      border-color: #ff9000;
+      border-color: var(--color-primary);
     `}
 
 /* Quando a propriedade isFilled for true, adiciona o css */
@@ -45,7 +47,7 @@ ${(props) =>
     ${(props) =>
       props.isFilled &&
       css`
-        color: #ff9000;
+        color: var(--color-primary);
       `}
 
 
@@ -75,11 +77,11 @@ export const Error = styled(Tooltip)`
   }
 
   span {
-    background: #c53030;
+    background: var(--color-primary-darker);
     color: #fff;
 
     &::before {
-      border-color: #c53030 transparent;
+      border-color: var(--color-primary-darker) transparent;
     }
   }
 `;

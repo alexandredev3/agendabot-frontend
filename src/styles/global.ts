@@ -14,7 +14,7 @@ export default createGlobalStyle`
   --color-text-title: #32264D;
   --color-text-complement: #9C98A6;
   --color-text-base: #6A6180;
-  --color-line-in-white: #FFFFFF;
+  --color-line-in-white: #AFBDD1;
   --color-input-background: #FAFAFC;
   --color-button-text: #FFFFFF;
   --color-box-base: #FFFFFF;
