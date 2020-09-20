@@ -31,8 +31,8 @@ const NavBar: React.FC = () => {
           <SmallTitle>
             <small>Settings</small>
           </SmallTitle>
-          <p><img src={integrationIcon} alt="integration icon" />Configurações</p>
-          <p><img src={settingsIcon} alt="settings icon" />Integração</p>
+          <p><img src={settingsIcon} alt="integration icon" />Configurações</p>
+          <p><img src={integrationIcon} alt="settings icon" />Integração</p>
         </Settings>
       </Content>
     </Container>

@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <Container>
       <Header />
-      <NavBar />
+      {/* <NavBar /> */}
 
       <Content>
         <DashboardPage />
