@@ -40,39 +40,82 @@ export const AnimationContainer = styled.div`
   form {
     margin: 80px 0;
     width: 340px;
-    text-align: center;
+    text-align: left;
 
     h1 {
-      margin-bottom: 24px;
-    }
-
-    a {
-      color: #f4ede8;
-      display: block;
-      margin-top: 24px;
-      text-decoration: none;
-      transition: color 0.2s;
-
-      &:hover {
-        color: ${shade(0.2, '#F4EDE8')};
-      }
+      color: var(--color-secundary);
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
   }
+`;
+
+export const BoxCheckerContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-complement);
+
+  > span {
+    font-size: 14px;
+  }
+`;
+
+export const GroupCheckerBox = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  > input[type=checkbox] {
+    margin-right: 16px;
+  }
+
+  > span {
+    font-size: 14px;
+  }
+`;
+
+export const GroupText = styled.div`
+  margin-top: 24px;
+  margin-bottom: 24px;
 
   > a {
-    color: #ff9000;
-    display: block;
-    margin-top: 24px;
+    color: var(--color-text-complement);
     text-decoration: none;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
+    font-size: 14px;
 
-    svg {
-      margin-right: 16px;
-    }
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#9C98A6')};
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  > p, strong {
+    font-size: 16px;
+  }
+`;
+
+export const WrapperText = styled.div`
+  > p {
+    color: var(--color-text-complement);
+  }
+`;
+
+
+export const WrapperLink = styled.div`
+  > a {
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:hover {
+      color: ${shade(0.2, '#E83F5C')};
     }
   }
 `;

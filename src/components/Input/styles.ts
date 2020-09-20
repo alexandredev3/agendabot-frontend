@@ -9,19 +9,18 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  background: #232129;
+  background: var(--color-input-background);
   border-radius: 10px;
   padding: 16px;
   width: 100%;
 
-  border: 2px solid #232129;
   color: #666360;
 
   display: flex;
   align-items: center;
 
   & + div {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   /* Quando a propriedade isErrored for true, adiciona o css */
@@ -55,7 +54,7 @@ ${(props) =>
     flex: 1;
     background: transparent;
     border: 0;
-    color: #fff;
+    color: var(--color-text-base);
 
     &::placeholder {
       color: #666360;
