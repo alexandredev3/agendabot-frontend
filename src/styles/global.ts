@@ -16,8 +16,8 @@ export default createGlobalStyle`
   --color-text-base: #6A6180;
   --color-line-in-white: #AFBDD1;
   --color-input-background: #FAFAFC;
-  --color-button-text: #FFFFFF;
-  --color-box-base: #FFFFFF;
+  --color-black: #9E9E9E;
+  --color-gray: #E5E5E5;
   --color-box-footer: #FAFAFC;
 }
 

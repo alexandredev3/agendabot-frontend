@@ -6,7 +6,10 @@ import servicesIcon from '../../assets/icons/services.svg';
 import integrationIcon from '../../assets/icons/integration.svg';
 import settingsIcon from '../../assets/icons/settings.svg';
 
+import lupaIcon from '../../assets/icons/lupa.svg'
+
 import { Container, Content, Search, Links } from './styles';
+
 
 const Header: React.FC = () => {
   return (
@@ -31,6 +34,7 @@ const Header: React.FC = () => {
         </Links>
 
         <Search>
+          <img src={lupaIcon} alt="lupa icon" />
           <input type="text" placeholder="Search" />
         </Search>
       </Content>

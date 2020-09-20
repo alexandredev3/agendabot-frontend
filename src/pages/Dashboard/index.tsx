@@ -1,19 +1,53 @@
 import React from 'react';
+import Calendar from 'react-calendar';
 
 import Header from '../../components/Header';
-import NavBar from '../../components/NavBar';
-import DashboardPage from '../../components/DashboardPage';
 
-import { Container, Content } from './styles';
+import { Container, Content, CardContainer, Card, CalendarContainer } from './styles';
+
+import clientsIcon from '../../assets/icons/clients.svg'
+import boardIcon from '../../assets/icons/board.svg'
+import bellIcon from '../../assets/icons/bell.svg'
+import headupIcon from '../../assets/icons/headup.svg'
 
 export default function Dashboard() {
   return (
     <Container>
       <Header />
-      {/* <NavBar /> */}
 
       <Content>
-        <DashboardPage />
+        <h1>Dashboard</h1>
+        <CardContainer>
+          <Card isActive={false}>
+            <img src={clientsIcon} alt=""/>
+            <p>128</p>
+            <small>Clientes</small>
+          </Card>
+
+          <Card isActive>
+            <img src={boardIcon} alt=""/>
+            <p>32</p>
+            <small>Missões cumpridas</small>
+          </Card>
+
+          <Card isActive={false}>
+            <img src={bellIcon} alt=""/>
+            <p>2</p>
+            <small>Notificações</small>
+          </Card>
+
+          <Card isActive={false}>
+            <img src={headupIcon} alt=""/>
+            <p>2</p>
+            <small>Relatório</small>
+          </Card>
+        </CardContainer>
+
+        <CalendarContainer>
+          <Calendar
+
+          />
+        </CalendarContainer>
       </Content>
     </Container>
   );
